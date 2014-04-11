@@ -1,0 +1,153 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'sardonyxregular';
+  src: url("font/sardonyx-webfont.eot");
+  src: url("font/sardonyx-webfont.eot?#iefix") format("embedded-opentype"), url("font/sardonyx-webfont.woff") format("woff"), url("font/sardonyx-webfont.ttf") format("truetype"), url("font/sardonyx-webfont.svg#sardonyxregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alteraregular';
+  src: url("font/altera-webfont.eot");
+  src: url("font/altera-webfont.eot?#iefix") format("embedded-opentype"), url("font/altera-webfont.woff") format("woff"), url("font/altera-webfont.ttf") format("truetype"), url("font/altera-webfont.svg#alteraregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 11, ../scss/style.scss */
+.top-all {
+  position: absolute;
+  text-align: right;
+  top: 10px;
+  width: 100%; }
+  /* line 17, ../scss/style.scss */
+  .top-all ul {
+    list-style: none; }
+    /* line 20, ../scss/style.scss */
+    .top-all ul li {
+      background-color: #fff;
+      display: inline-block;
+      margin-left: 10px;
+      padding: 5px;
+      -webkit-box-shadow: 0 0 5px 1px #aaaaaa;
+      -moz-box-shadow: 0 0 5px 1px #aaaaaa;
+      box-shadow: 0 0 5px 1px #aaaaaa; }
+      /* line 27, ../scss/style.scss */
+      .top-all ul li a, .top-all ul li a:link, .top-all ul li a:visited {
+        color: #000;
+        font-family: "sardonyxregular";
+        font-size: 1.5em;
+        text-decoration: none; }
+    /* line 36, ../scss/style.scss */
+    .top-all ul li:last-child {
+      margin-right: 18px; }
+
+/* line 45, ../scss/style.scss */
+#home {
+  width: 100%; }
+  /* line 49, ../scss/style.scss */
+  #home .bg-home {
+    display: block;
+    overflow: visible;
+    position: absolute;
+    width: 100%;
+    z-index: -1; }
+  /* line 58, ../scss/style.scss */
+  #home .logo {
+    height: 300px;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    position: absolute;
+    top: 50%;
+    width: 500px; }
+    /* line 67, ../scss/style.scss */
+    #home .logo .cicle-logo {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ccc;
+      content: "J";
+      display: block;
+      font-family: "alteraregular";
+      font-size: 5.8em;
+      height: 160px;
+      left: 50%;
+      margin-left: -80px;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 150px;
+      width: 160px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+      border-radius: 100px; }
+    /* line 85, ../scss/style.scss */
+    #home .logo .cicle-logo::before {
+      border: 2px solid #000;
+      content: " ";
+      display: block;
+      height: 180px;
+      left: -12px;
+      position: absolute;
+      top: -12px;
+      width: 180px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+      border-radius: 100px; }

@@ -1,0 +1,99 @@
+//Imports
+@import "compass/reset";
+@import "compass/css3";
+@import "_font.scss";
+
+//Fonts
+$altera: 'alteraregular';
+$onyx: 'sardonyxregular';
+
+//top-all
+.top-all{
+	position: absolute;
+	text-align: right;
+	top: 10px;
+	width: 100%;
+
+	ul{
+		list-style: none;
+
+		li{
+			background-color: #fff;
+			display: inline-block;
+			margin-left: 10px;
+			padding: 5px;
+			@include box-shadow(0 0 5px 1px #aaa);
+
+			a, a:link, a:visited{
+				color: #000;
+				font-family: $onyx;
+				font-size: 1.5em;
+				text-decoration: none;
+			}
+
+		}
+
+		li:last-child{
+			margin-right: 18px;
+		}
+
+	}
+
+}
+
+//home
+#home{
+	width: 100%;
+
+	//bg
+	.bg-home{
+		display: block;
+		overflow: visible;
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+
+	//logo
+	.logo{
+		height: 300px;
+		left: 50%;
+		margin-left: -250px;
+		margin-top: -150px;
+		position: absolute;
+		top: 50%;
+		width: 500px;
+
+		.cicle-logo{
+			background-color: rgba(0, 0, 0, 0.7);
+			color: #ccc;
+			content: "J";
+			display: block;
+			font-family: $altera;
+			font-size: 5.8em;
+			height: 160px;
+			left: 50%;
+			margin-left: -80px;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			line-height:150px;
+			width: 160px;
+			@include border-radius(100px);
+		}
+
+		.cicle-logo::before{
+			border: 2px solid #000;
+			content: " ";
+			display: block;
+			height: 180px;
+			left: -12px;
+			position: absolute;
+			top: -12px;
+			width: 180px;
+			@include border-radius(100px);
+		}
+
+	}
+
+}

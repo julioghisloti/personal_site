@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".bg-home").maximage()}),$(function(){var e=$(document).height();$("#home").height(e)});
